@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item1"
+        android:title="@string/New"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item2"
+        android:title="@string/back"
+        app:showAsAction="never" />
+
+    <item
+        android:title="更换背景"
+        >
+        <menu>
+            <!--定义一组普通菜单项-->
+            <group>
+                <item
+                    android:title="绿"
+                    android:id="@+id/lv" />
+                <item
+                    android:title="紫"
+                    android:id="@+id/zi"/>
+                <item
+                    android:title="蓝"
+                    android:id="@+id/lan"/>
+                <item
+                    android:title="白"
+                    android:id="@+id/bai"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="分类"
+        >
+        <menu>
+            <!--定义一组普通菜单项-->
+            <group>
+                <item
+                    android:title="蓝"
+                    android:id="@+id/blue" />
+                <item
+                    android:title="绿"
+                    android:id="@+id/green"/>
+                <item
+                    android:title="黄"
+                    android:id="@+id/yellow"/>
+                <item
+                    android:title="全部"
+                    android:id="@+id/all"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/share"
+        app:showAsAction="never" />
+
+    <item
+        android:title="背景颜色"
+        >
+        <menu>
+            <!--定义一组普通菜单项-->
+            <group>
+                <!--定义两个菜单项-->
+                <item
+                    android:title="蓝"
+                    android:id="@+id/blue" />
+                <item
+                    android:title="绿"
+                    android:id="@+id/green"/>
+                <item
+                    android:title="黄"
+                    android:id="@+id/yellow"/>
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>

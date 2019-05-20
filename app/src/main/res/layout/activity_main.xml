@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#efefef"
+android:paddingLeft="13dp"
+android:paddingRight="13dp"
+android:paddingBottom="5dp"
+android:paddingTop="5dp"
+tools:context=".MainActivity" >
+
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="搜索内容" />
+
+<ListView
+    android:id="@+id/lv_bwlList"
+    android:divider="#00000000"
+    android:dividerHeight="9dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+<ImageButton
+    android:id="@+id/btnAdd"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/ic_launcher_round"
+    android:alpha="70"
+    android:background="#00ffffff"
+    android:layout_margin="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+-->
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/primary_sosuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white"
+        />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:id="@+id/ll_main"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+   >
+
+    <ListView
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:id="@+id/lv_bwlList"
+        android:divider="#00000000"
+        android:dividerHeight="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<!--
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/plus_circle"
+        android:alpha="70"
+        android:background="#00ffffff"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>-->
+
+
+
+  <com.example.notepad2.DragFloatActionButton
+        android:id="@+id/fb"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:borderWidth="0dp"
+      app:backgroundTint="#FFFFFF"
+      app:rippleColor="#008577"
+        android:src="@drawable/hao"
+     android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+        />
+
+
+   <!--
+       app:backgroundTint="#008577"
+        app:rippleColor="#ff87ffeb"
+
+   <com.example.notepad2.DragFloatActionButton
+        android:id="@+id/fb"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:backgroundTint="#ff87ffeb"
+        app:rippleColor="#008577"
+        android:src="@drawable/plus_circle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:elevation="6dp"
+        app:borderWidth="0dp"
+        app:pressedTranslationZ="12dp"
+        app:fabSize="mini"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        />-->
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
